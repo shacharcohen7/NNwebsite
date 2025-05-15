@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shachar Cohen</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <header> 
+            <p id="my_name" class="name">
+                <img src="images/favicon.ico" style="height: 30px; width: 30px;">
+                Shachar Cohen
+            </p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </nav>
+        </header>
+        <section class="welcome">
+            <div>
+                <p>Shachar Cohen - Software Engineer.</p>
+            </div>
+            <div class="separator"></div>
+            <div class="me">
+                <img src="images/me.jpg" alt="me">
+                <div class="contact">
+                    <div class="row">
+                        <img src="images/call.webp" alt="linkedin">
+                        052-3958080
+                    </div>
+                    <div class="row">
+                        <img src="images/gmail.webp" alt="linkedin">
+                        shacharc4@gmail.com
+                    </div>
+                    <div class="row">
+                        <img src="images/linkedin.webp" alt="linkedin">
+                        <a href="https://www.linkedin.com/in/shachar-cohen-sw-eng/" target="_blank" style="word-break: break-word;">
+                            linkedin.com/in/shachar-cohen-sw-eng
+                        </a>
+                    </div>
+                    <div class="row">
+                        <img src="images/git.png" alt="github">
+                        <a href="https://github.com/shacharcohen7" target="_blank" style="word-break: break-word;">
+                            github.com/shacharcohen7
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h1 data-aos="fade-up">Introduction</h1>
+            <div style="display: flex; gap: 30px;">
+                <div id="left" class="arrow disabled">
+                    <button onclick="goLeft()"><i class="fas fa-chevron-left"></i></button>
+                </div>
+                <div class="article">
+                    <div class="page-container" data-aos="fade-up">
+                        <div id="page1" class="page active">
+                            <div class="title">My Story</div>                            
+                            <p>Work Experience, Education, and the next step -></p>
+                        </div>
+                        <div id="page2" class="page">   
+                            <div class="title">First Step into High-Tech</div>   
+                            <p>                      
+                                I worked as a Quality Assurance Engineer at Biosense Webster (J&J). As part of the QA team for a medical software system, I was responsible for analyzing system requirements, creating comprehensive test plans, and executing functional, non-functional, and regression tests. I managed defect tracking and reporting using Azure DevOps (VSTS), and worked closely with developers and system engineers to ensure product reliability, usability, and compliance with industry standards. </p>
+                            <img src="images/biosense.png" alt="biosense" class="logo biosense">
+                        </div>
+                        <div id="page3" class="page">   
+                            <div class="title">B.Sc. in Software Engineering</div>   
+                            <p>                      
+                                At Ben-Gurion University, I built a strong foundation in both frontend and backend development, deepening my knowledge in core computer science topics such as Data Structures, Algorithms, and Design Patterns. Throughout my studies, I gained extensive hands-on experience through team-based projects, working with various programming languages including Java, Python, and C#, and developing in both Windows and Linux environments. <img src="images/bgu.png" alt="biosense" style="width: 210px;" class="logo bgu">
+                            </p>
+                        </div>
+                        <div id="page4" class="page">     
+                            <div class="title">The Next Step</div>   
+                            <p>                      
+                                Now that I am available for a full-time position, I am looking for my first role as a software developer where I can apply my knowledge in practice, grow professionally, and contribute to a meaningful development process. I bring a strong technical background, a keen attention to detail, and a genuine passion for building reliable, high-quality systems that make a real impact.
+                            </p>
+                            </div>
+                    </div>
+                    <div class="page-dots">
+                        <span class="dot active" onclick="goToPage(1)"></span>
+                        <span class="dot" onclick="goToPage(2)"></span>
+                        <span class="dot" onclick="goToPage(3)"></span>
+                        <span class="dot" onclick="goToPage(4)"></span>
+                    </div>
+                </div>
+                <div id="right" class="arrow">
+                    <button onclick="goRight()"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h1 data-aos="fade-up">My Skills</h1>
+            <div class="content" data-aos="fade-up">
+                <div class="logo-container">
+                    <div class="logo" data-tooltip="Java"><img src="images/java.webp" alt="Java"></div>
+                    <div class="logo" data-tooltip="Pyhton"><img src="images/python.png" alt="Pyhton"></div>
+                    <div class="logo" data-tooltip="C#"><img src="images/c.png" alt="C#"></div>
+                    <div class="logo" data-tooltip="JavaScript"><img src="images/js.png" alt="JavaScript"></div>
+                    <div class="logo" data-tooltip="Selenium"><img src="images/selenium.jpeg" alt="Selenium"></div>
+                    <!-- <div class="logo" data-tooltip="TypeScript"><img src="images/typescript.png" alt="TypeScript"></div> -->
+                    <div class="logo" data-tooltip="CSS"><img src="images/css.png" alt="CSS"></div>
+                    <div class="logo" data-tooltip="HTML"><img src="images/html.png" alt="HTML"></div>
+                    <div class="logo" data-tooltip="React"><img src="images/react.png" alt="React"></div>
+                    <!-- <div class="logo" data-tooltip="Angular"><img src="images/angular.png" alt="Angular"></div> -->
+                    <div class="logo" data-tooltip="Git"><img src="images/gitorigin.png" alt="Git"></div>
+                    <div class="logo" data-tooltip="SQL"><img src="images/sql.png" alt="SQL"></div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <h1 data-aos="fade-up">My Projects</h1>
+            <div class="projects" data-aos="fade-up">
+                <div class="project">
+                    <div class="desc">
+                        <div class="title">
+                            <a href="https://github.com/shacharcohen7/ReactNN" target="_blank">
+                                <img src="images/git.png" alt="negevNerdsGit">
+                                <p>Negev Nerds</p>
+                            </a>
+                        </div>
+                        <p>
+                            A centralized platform that enables students to efficiently share and discuss past exam questions 
+                            through a searchable question repository and interactive discussion features.
+                        </p>
+                        <div class="tech-stack">
+                            <img src="images/python.png" alt="Pyhton">
+                            <img src="images/react.png" alt="React">
+                        </div>
+                    </div>
+                    <img class="project-img" src="images/NN.png" alt="negevnerds">
+                </div>
+                <div class="project">
+                    <div class="desc">
+                        <div class="title">
+                            <a href="https://github.com/shacharcohen7/The-Market" target="_blank">
+                                <img src="images/git.png" alt="theMarketGit">
+                                <p>The Market</p>
+                            </a>
+                        </div>
+                        <p>
+                            A multi-store e-commerce platform for buying, selling, and managing products.
+                        </p>
+                        <div class="tech-stack">
+                            <img src="images/java.webp" alt="Java">
+                        </div>
+                    </div>
+                    <img class="project-img" src="images/themarket.png" alt="theMarket">
+                </div>
+                <div class="project">
+                    <div class="desc">
+                        <div class="title">
+                            <a href="https://github.com/shacharcohen7/PrestaShop" target="_blank">
+                                <img src="images/git.png" alt="PrestaShop">
+                                <p>PrestaShop Automation Testing</p>
+                            </a>
+                        </div>
+                        <p>
+                            QA automation for open-source software.
+                        </p>
+                        <div class="tech-stack">
+                            <img src="images/java.webp" alt="Java">
+                            <img src="images/selenium.jpeg" alt="Java">
+                        </div>
+                    </div>
+                    <img class="project-img" src="images/presta-shop.png" alt="PrestaShop">
+                </div>
+                <div class="project">
+                    <div class="desc">
+                        <div class="title">
+                            <a href="https://github.com/shacharcohen7/Portfolio" target="_blank">
+                                <img src="images/git.png" alt="portfolio">
+                                <p>My Portfolio</p>
+                            </a>
+                        </div>
+                        <p>
+                            Personal Website - Information, Skills, Projects.
+                        </p>
+                        <div class="tech-stack">
+                            <img src="images/html.png" alt="Java">
+                            <img src="images/css.png" alt="Java">
+                        </div>
+                    </div>
+                    <img class="project-img" src="images/favicon.ico" alt="myLogo">
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            let currentPageNumber = 1;
+            function goToPage(pageNumber){
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active')
+                });
+                document.getElementById('page'+pageNumber).classList.add('active');
+                document.querySelectorAll('.dot').forEach((dot, index) => {
+                    dot.classList.remove('active');
+                    if(index === pageNumber - 1){
+                        dot.classList.add('active');
+                    }
+                })
+                currentPageNumber = pageNumber;
+                updateArrows();
+            }
+            function goRight(){
+                currentPageNumber++;
+                goToPage(currentPageNumber);
+                updateArrows();
+            }
+            function goLeft(){
+                currentPageNumber--;
+                goToPage(currentPageNumber);
+                updateArrows();
+            }
+            function updateArrows(){
+                if(currentPageNumber==1){
+                    document.getElementById('left').classList.add('disabled');
+                }
+                else{
+                    document.getElementById('left').classList.remove('disabled');
+                }
+                if(currentPageNumber==4){
+                    document.getElementById('right').classList.add('disabled');
+                }
+                else{
+                    document.getElementById('right').classList.remove('disabled');
+                }
+            }
+            document.getElementById("my_name").onclick = function(){
+                window.scrollTo({
+                    top:0
+                })
+            }
+        </script>
+    </body>
+</html>
