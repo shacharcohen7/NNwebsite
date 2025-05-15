@@ -51,11 +51,11 @@ section{
 /* Welcome */
 section.welcome{
     gap: 70px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%), url("images/solid.jpg");
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%), url("images/orange-background.jpg");
     background-size: cover;
 }
 .welcome p{
-    font-size: 45px; 
+    font-size: 35px; 
     line-height: 1.5;
     font-weight: 400;
     margin: 0%;
@@ -116,7 +116,7 @@ section.about{
     background: 
                 linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%),
                 linear-gradient(to top, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), 
-                url("images/paper.avif");
+                url("images/orange-background.jpg");
     background-size: cover;
     align-items: center;
 }
@@ -157,15 +157,25 @@ section.about{
     flex-direction: column;
     justify-content: center;
 }
-.page-container{
+
+.video-container{
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    min-height: 30vh;
-    max-width: 500px;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
     padding-bottom: 70px;
+    position: relative;
+}
+.page-container{
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    padding-bottom: 70px;
+    width: 700px;
+    height: 500px;
     position: relative;
 }
 .page {
@@ -216,18 +226,18 @@ section.about{
 }
 
 /* skills */
-section.skills{
+section.technology{
     background: 
-                linear-gradient(to bottom, rgba(255,255,255,0.5) 50%, rgba(255,255,255,1) 100%),
-                linear-gradient(to top, rgba(255,255,255,0.5) 50%, rgba(255,255,255,1) 100%), 
-                url("images/squareB.avif");
+                linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%),
+                linear-gradient(to top, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), 
+                url("images/orange-background.jpg");
     background-size: cover;
 }
-.skills h1{
+.technology h1{
     font-size: 45px; 
     align-self: center; 
 }
-.skills .content{
+.technology .content{
     /* height: 65vh; */
     padding: 30px;
     /* background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url("images/square.avif"); */
@@ -274,20 +284,21 @@ section.skills{
     animation: dance 1.5s ease-in-out infinite;
 }
  /* projects */
-section.projects{
+section.documents{
     background: 
-    linear-gradient(to top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,1) 100%),
-        url("images/projects.jpg");
+                linear-gradient(to bottom, rgba(255,255,255,0) 80%, rgba(255,255,255,1) 100%),
+                linear-gradient(to top, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), 
+                url("images/orange-background.jpg");
     background-size: cover;
     padding-bottom: 100px;
 }
 
-.projects h1{
+.documents h1{
     font-size: 45px; 
     align-self: center; 
 }
 
-.projects{
+.documents{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -374,6 +385,44 @@ section.projects{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.5px;
+}
+
+section.team{
+    background: 
+                /* linear-gradient(to bottom, rgba(255,255,255,0) 80%, rgba(255,255,255,1) 100%), */
+                linear-gradient(to top, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), 
+                url("images/orange-background.jpg");
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.team h1{
+    font-size: 45px; 
+    align-self: center; 
+}
+.member-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 10px;
+}
+.member {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.member img {
+    background-color: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* object-fit: contain; */
+}
+.member p {
+    font-size: 18px;
 }
 
 @keyframes dance{
