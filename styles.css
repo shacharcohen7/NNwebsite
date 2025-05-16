@@ -28,17 +28,24 @@ header .name:hover{
     cursor: pointer;
 }
 nav {
+    align-items: center;
     margin-right: 80px;
     display: flex; 
     gap: 30px;
     padding-block: 10px;
 }
 nav a{
+    display: flex;
+    align-items: center;
     color: black;
     text-decoration: none;
 }
 nav a:hover{
     color: rgba(0, 0, 0, 0.7);
+}
+nav a img{
+    width: 30px;
+    height: 30px;
 }
 section{
     min-height: 100vh;
@@ -71,13 +78,13 @@ section.welcome{
     font-weight: 700;
     text-shadow: 2px 2px 6px rgba(93, 63, 211, 0.4); */
 }
-.welcome .me{
+.welcome .NN{
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
     gap: 10%;
 }
-.me > img{
+.NN > img{
     /* min-width: 200px; */
     width: 30%;
     height: 30%;
@@ -157,7 +164,10 @@ section.about{
     flex-direction: column;
     justify-content: center;
 }
-
+.article video{
+    width: 640px;
+    height: 390px;
+}
 .video-container{
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -407,6 +417,7 @@ section.team{
     gap: 50px;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 .member {
     position: relative;
@@ -449,7 +460,13 @@ section.team{
         margin-left: 12px;
     }
     nav {
+        gap: 10px;
         margin-right: 12px;
+    }
+    nav a img{
+        width: 25px;
+        height: 25px;
+        align-self: center;
     }
     section.welcome{
         gap: 30px;
@@ -457,22 +474,18 @@ section.team{
     }
     .welcome p{
         text-align: center;
+        font-size: 40px;
         align-self: center;
     }
-    .welcome .me{
+    .welcome .NN{
         flex-direction: column;
         /* align-items: center; */
         gap: 30px;
     }
-    .me > img{
+    .NN > img{
         width: 200px;
         height: 200px;
     }
-    /* .welcome h1{
-        margin-top: 100px;
-        font-size: 40px; 
-        font-weight: 600;
-    } */
     .welcome p{
         font-size: 30px; 
         /* font-weight: 400; */
@@ -497,36 +510,34 @@ section.team{
         transition: all 0.3s ease;
         box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
+    .article video{
+        width: 300px;
+        height: 300px;
+    }
     .page-container{
-        min-width: auto;
+        width: 300px;
+        /* height: 250px; */
         padding: 15px;
         padding-bottom: 70px;
     }
     .page {
         font-size: 16px;
     }
-    .logo.bgu{
-        height: 50px; 
-    }
-    .logo.biosense{
-        height: 50px; 
-        width: 180px;
-    }
-    section.skills{
+    section.technology{
         padding: 10px;
         padding-bottom: 100px;
     }
-    .skills h1{
+    .technology h1{
         font-size: 35px; 
     }
     .logo img {
         width: 80px;
         height: 80px;
     }
-    .projects h1{
+    .documents h1{
         font-size: 35px; 
     }
-    .project{
+    .document{
         flex-wrap: wrap;
         font-size: 18px;
     }
@@ -537,5 +548,16 @@ section.team{
         font-size: 16px;
         /* line-height: 2;
         letter-spacing: 0.5px; */
+    }
+    section.team{
+        padding: 10px;
+        padding-bottom: 100px;
+    }
+    .team h1{
+        font-size: 35px; 
+    }
+    .member img {
+        width: 80px;
+        height: 80px;
     }
 }
